@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Social Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .profile-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            object-fit: cover;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 25px;
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .social-btn i {
+            font-size: 1.3em;
+            width: 30px;
+        }
+        
+        /* Different colors for each platform */
+        .instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+        .facebook { background: linear-gradient(45deg, #1877f2, #0e5a8a); }
+        .linkedin { background: linear-gradient(45deg, #0077b5, #005c97); }
+        .github { background: linear-gradient(45deg, #333, #24292e); }
+        .youtube { background: linear-gradient(45deg, #ff0000, #cc0000); }
+        .tiktok { background: linear-gradient(45deg, #000, #ff0050); }
+        
+        @media (max-width: 480px) {
+            .profile-card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <!-- Replace with your photo -->
+        <img src="WhatsApp Image 2026-05-09 at 3.50.59 PM.jpeg" alt="Your Photo" class="profile-pic">
+        
+        <h1>Your Name</h1>
+        <p class="subtitle">Connect with me</p>
+        
+        <div class="social-links">
+            <!-- REPLACE THESE LINKS WITH YOUR ACTUAL PROFILES -->
+            <a href="https://www.instagram.com/tareksameh112?igsh=czVtcm10YWx5ZHFy&utm_source=qr" class="social-btn instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+            <a href="https://www.facebook.com/share/1Jkb7gbTcn/?mibextid=wwXIfr" class="social-btn facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+            </a>
+            <a href="https://www.linkedin.com/in/tarek-sameh-a42601375?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="social-btn linkedin" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <a href="https://github.com/tsameh217-droid/tarek.git" class="social-btn github" target="_blank">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+            <!-- Add more platforms as needed -->
+        </div>
+    </div>
+</body>
+</html>
